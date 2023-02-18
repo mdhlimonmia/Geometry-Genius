@@ -25,3 +25,15 @@ newBtn.classList.add('new-btn')
 // Location.appendChild(newBtn);
 return newBtn;
 }
+
+function random_bg_color(id) {
+    var x = Math.floor(Math.random() * 256);
+    var y = Math.floor(Math.random() * 256);
+    var z = Math.floor(Math.random() * 256);
+    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+
+  const place = document.getElementById(id);
+    place.style.background = bgColor;
+    }
+
+
