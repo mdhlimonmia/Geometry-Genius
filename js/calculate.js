@@ -1,9 +1,13 @@
 const tngCalculate = document.getElementById('tng-btn').addEventListener("click",function(){
     const width = getValue('tr-width');
     const height = getValue('tr-height');
+    // if(width === 0 || height === 0){
+    //     console.log("Invalid Input");
+    // }
+    // else{
     const area = (.5*width*height);  
-    // console.log(area);
     addHistory('Triangle',area);
+    
 })
 const rngCalculate = document.getElementById('rng-btn').addEventListener("click",function(){
     const width = getValue('rng-width');
