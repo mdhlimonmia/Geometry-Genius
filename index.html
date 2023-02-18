@@ -6,32 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment_5</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                btncolor: "#1090D8",
+                bordercolor: "rgba(17, 17, 17, 0.1)",
+              },
+              fontFamily: {
+                eb: ["EB Garamond", "serif"],
+                poppins: ["Poppins", "sans-serif"],
+              },
+            },
+          },
+        };
+      </script>
 </head>
-<body>
-    <section>
+<body class="m-5">
+    <!-- Navigation Section-->
+    <section class="flex justify-between rounded-sm px-10 py-2 bg-cyan-100 items-center ">
         <div>
-            <h1>Interactive</h1>
+            <h1 class="text-2xl font-bold">Interactive</h1>
             <p>Geometry Genius</p>
         </div>
         <div>
-            <button>Blog</button>
+            <button class="bg-btncolor px-5 py-1 rounded-lg text-white">Blog</button>
         </div>
     </section>
 
-    <section>
-        <div>
-            <div>
+<!-- Main Section -->
+    <section class="mt-5 grid grid-cols-4 gap-10">
+        <div class="grid md:grid-cols-3 gap-5 col-span-3">
+            <div class="border-2 border-zinc-200 rounded-lg flex flex-col items-center p-8 gap-2">
                 <img src="images/triangle.png" alt="">
-                <h1>Triangle</h1>
+                <h1 class="text-2xl font-bold">Triangle</h1>
                 <p>Area (A) = 0.5 X b X h</p>
-                <input type="text" placeholder="b"> <span>cm</span>
-                <input type="text" placeholder="h" name="" id=""> <span>cm</span>
-                <br>
-                <button>Calculate</button>
+                <div class="flex gap-2 items-center">
+                    <input class="w-16 rounded-sm" type="text" placeholder="b"><span>cm</span>
+                    <input class="w-16 rounded-sm" type="text" placeholder="h" name="" id=""> <span>cm</span>
+                </div>
+                <button class="bg-btncolor mt-5 px-24 py-1 rounded-lg text-white">Calculate</button>
+            </div>
+            <div class="border-2 border-zinc-200 rounded-lg flex flex-col items-center p-8 gap-2">
+                <img src="images/rectangle.png" alt="">
+                <h1 class="text-2xl font-bold">Rectangle</h1>
+                <p>Area (A) = w X l</p>
+                <div class="flex gap-2 items-center">
+                    <input class="w-16 rounded-sm" type="text" placeholder="w"><span>cm</span>
+                    <input class="w-16 rounded-sm" type="text" placeholder="l" name="" id=""> <span>cm</span>
+                </div>
+                <button class="bg-btncolor mt-5 px-24 py-1 rounded-lg text-white">Calculate</button>
+            </div>
+            <div class="border-2 border-zinc-200 rounded-lg flex flex-col items-center p-8 gap-2">
+                <img src="images/parallelogram.png" alt="">
+                <h1 class="text-2xl font-bold">Parallelogram</h1>
+                <p>Area (A) = b X h</p>
+                <div class="flex gap-2 items-center">
+                    <input class="w-16 rounded-sm" type="text" placeholder="b"><span>cm</span>
+                    <input class="w-16 rounded-sm" type="text" placeholder="h" name="" id=""> <span>cm</span>
+                </div>
+                <button class="bg-btncolor mt-5 px-24 py-1 rounded-lg text-white">Calculate</button>
+            </div>
+            <div class="border-2 border-zinc-200 rounded-lg flex flex-col items-center p-8 gap-2">
+                <img src="images/rhombus.png" alt="">
+                <h1 class="text-2xl font-bold">Rhombus</h1>
+                <p>Area (A) = 0.5 X d1 X d2</p>
+                <div class="flex gap-2 items-center">
+                    <input class="w-16 rounded-sm" type="text" placeholder="d1"><span>cm</span>
+                    <input class="w-16 rounded-sm" type="text" placeholder="d2" name="" id=""> <span>cm</span>
+                </div>
+                <button class="bg-btncolor mt-5 px-24 py-1 rounded-lg text-white">Calculate</button>
+            </div>
+            <div class="border-2 border-zinc-200 rounded-lg flex flex-col items-center p-8 gap-2">
+                <img src="images/pentagon.png" alt="">
+                <h1 class="text-2xl font-bold">Pentagon</h1>
+                <p>Area (A) = 0.5 X p X b</p>
+                <div class="flex gap-2 items-center">
+                    <input class="w-16 rounded-sm" type="text" placeholder="p"><span>cm</span>
+                    <input class="w-16 rounded-sm" type="text" placeholder="b" name="" id=""> <span>cm</span>
+                </div>
+                <button class="bg-btncolor mt-5 px-24 py-1 rounded-lg text-white">Calculate</button>
+            </div>
+            <div class="border-2 border-zinc-200 rounded-lg flex flex-col items-center p-8 gap-2">
+                <img src="images/ellipse.png" alt="">
+                <h1 class="text-2xl font-bold">Ellipse</h1>
+                <p>Area (A) = Pi X a X b</p>
+                <div class="flex gap-2 items-center">
+                    <input class="w-16 rounded-sm" type="text" placeholder="a"><span>cm</span>
+                    <input class="w-16 rounded-sm" type="text" placeholder="b" name="" id=""> <span>cm</span>
+                </div>
+                <button class="bg-btncolor mt-5 px-24 py-1 rounded-lg text-white">Calculate</button>
             </div>
         </div>
         <div>
-
+            <div>
+                <h1>Area Calculation</h1>
+                
+            </div>
         </div>
     </section>
 </body>
