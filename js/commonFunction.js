@@ -1,3 +1,4 @@
+// Return Floating value for given id.
 function getValue(idName){
     const input = document.getElementById(idName);
     const inputString = input.value;
@@ -15,6 +16,8 @@ function getValue(idName){
         return inputValue;
     }
 }
+
+// Display Calculation result in Calculation area.
 function addHistory(name,area){
     const findLocation = document.getElementById('calculation-history');
     newLine = document.createElement('li');
@@ -32,6 +35,7 @@ function addHistory(name,area){
     findLocation.appendChild(btn);
     }
 }
+// Create auto button for each calculation.
 function addBtn(){
 const newBtn = document.createElement('button');
 newBtn.innerHTML = `<p>convert m<sup>2</sup></p>`;
@@ -41,13 +45,14 @@ newBtn.classList.add('new-btn')
 return newBtn;
 }
 
+// Provide Random Color.
 function random_bg_color(id) {
     var x = Math.floor(Math.random() * 256);
     var y = Math.floor(Math.random() * 256);
     var z = Math.floor(Math.random() * 256);
     var bgColor = "rgb(" + x + "," + y + "," + z + ")";
 
-  const place = document.getElementById(id);
+    const place = document.getElementById(id);
     place.style.background = bgColor;
     }
 
