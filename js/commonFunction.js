@@ -3,7 +3,7 @@ function getValue(idName){
     const inputString = input.value;
     const inputValue = parseFloat(inputString);
     input.value = '';
-    return inputValue;
+      return inputValue;
 }
 function addHistory(name,area){
     const findLocation = document.getElementById('calculation-history');
@@ -14,8 +14,8 @@ function addHistory(name,area){
     // const btn = addBtn();
     // findLocation.appendChild(newLine);
     findLocation.appendChild(newLine);
-    // const btn = addBtn();
-    // findLocation.appendChild(btn);
+    const btn = addBtn();
+    findLocation.appendChild(btn);
 }
 function addBtn(){
 const newBtn = document.createElement('button');
