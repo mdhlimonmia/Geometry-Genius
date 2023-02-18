@@ -5,40 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Four Question Answer</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-
-
-
-
-
+<body class="four-question">
+    <p class="header">Answer to the four Question</p>
 <div>
     <h1>01.What is DOM and what is purpose of dom?</h1>
-    <p>Answer:DOM is document object model. Document is our html file and object is all of html element and total interface is model.DOM is programming interface for web documents. It can give you changing power of element ,document structure ,style and content . With dom you can interact web page.purpose make web page dynamic chang html elements,html attribute modify css style , remove element , add element ,react on html event and create html event/.</p>
+    <h3><p>Answer:DOM is document object model. Document is our html file and object is all of html element and total interface is model.DOM is programming interface for web documents. It can give you changing power of element ,document structure ,style and content . With dom you can interact web page.purpose make web page dynamic chang html elements,html attribute modify css style , remove element , add element ,react on html event and create html event.</p></h3>
 </div>
 
 <div>
     <h1>02.How to select element with DOM?</h1>
     <h2>Answer: You can select element with some method.</h2> 
-    <ul>
+    <h3><ul>
         <li>getElementById()</li>
         <li>getElementsByClassName()</li>
         <li>querySelectorAll() </li>
         <li>getElementsByTagName()</li>
         <li>querySelector()</li>
-    </ul>
+    </ul></h3>
 </div>
 
 <div>
-    <h1>03.What is event Bubble and with description?</h1>
-    <p>
-Answer: Event bubbling is a method of event propagation in the HTML DOM API when an 
-event is in an element inside another element, and both elements have registered a handle to that event. It is a process that starts with the element that triggered the event and then bubbles up to the containing elements in the hierarchy. In event bubbling, the event is first captured and handled by the innermost element and then propagated to outer elements.
-    </p>
+    <h1>03.What is Event Bubble and with description?</h1>
+    <h3><p>
+        Answer: Event bubbling work like bubble. Its work down to up. It is a method of event propagation in the HTML DOM API when an event is in an element inside another or more element, and all elements have include a handle to that event. It is a process that starts with the element and going to last element.
+        <br>
+        Event element use by EventBubbling(). EventCapturing() is work opposite EventBubbling(). If you want to avoid this process you can use stopPropagation(). 
+            </p></h3>
 </div>
 <div>
-    <h1>04.what is callback function tell me about this?</h1>
-    <p>Answer: callback function : When a function passed as a argument to another function then the first function called a callback function.</p>
+    <h1>04.What is callback function tell me about this?</h1>
+    <h3><p>Answer: Callback function : When a function passed as a argument to another function then the first function called a callback function.
+        <br>
+        The Function that is given as a argument that function is run after all. Its make your work much easier.
+    </p></h3>
 </div>
 </body>
 </html>
